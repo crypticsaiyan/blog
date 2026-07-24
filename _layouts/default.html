@@ -18,6 +18,14 @@
   {%- include head.html -%}
 
   <body>
+    <div class="noisecont" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="key" data-dir="up">&#8593;</span>
+      <span class="key" data-dir="up">k</span>
+      <span class="key" data-dir="down">j</span>
+      <span class="key" data-dir="down">&#8595;</span>
+    </div>
     <div class="container">
 
       {%- include header.html -%}
@@ -29,5 +37,8 @@
     {%- include footer.html -%}
 
     </div>
+    <script src="{{ '/assets/js/cursor.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/copy-code.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/scroll-nav.js' | relative_url }}" defer></script>
   </body>
 </html>
