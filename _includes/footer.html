@@ -1,5 +1,11 @@
 <footer>
-  <div class="copy">
-    <p>&copy; {{site.title}} {{ site.time | date: '%Y' }} | Powered by Jekyll and <a target="_blank" href="https://github.com/jitinnair1/snippet-book/">snippet-book</a>.</p>
+  <div class="status">
+    <span class="status-label">--{% if page.title %}NORMAL{% else %}EXPLORER{% endif %}--</span>
+    <div class="perm-line">
+      <span class="perm">
+        <span>-</span><span class="perm-r">r</span><span class="perm-w">w</span><span class="perm-x">x</span><span class="perm-r">r</span><span>-</span><span>-</span><span class="perm-r">r</span><span>-</span><span>-</span>
+      </span>
+      <span class="perm-target">{{ page.title | default: page.url | escape }}</span>
+    </div>
   </div>
 </footer>
