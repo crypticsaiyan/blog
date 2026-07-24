@@ -1,180 +1,105 @@
 @use "colors/_mocha" as *;
 @use "sass:color";
 
+// matches the catppuccin/nvim mocha setup used in ~/.config/nvim:
+// no_bold, no_italic, no_underline all forced, Normal bg overridden to mantle.
 .highlight {
   .hll {
     background-color: $mocha-surface1;
   }
-  background: color.adjust($mocha-surface0, $lightness:5%);
-  .c {
-    color: $mocha-subtext1;
-    font-style: italic;
+  background: $mocha-mantle;
+
+  // Comment
+  .c, .cm, .c1, .cs {
+    color: $mocha-overlay2;
   }
   .err {
     border: 1px solid $mocha-red;
   }
-  .k {
-    color: $mocha-green;
-    font-weight: bold;
+
+  // PreProc / Include / Define / Macro / PreCondit / Keyword / Statement / Conditional / Repeat / Exception / Tag
+  .cp, .k, .kc, .kd, .kn, .kp, .kr, .ow, .ne, .nt, .nd {
+    color: $mocha-mauve;
   }
+
+  // Operator
   .o {
-    color: $mocha-subtext0;
+    color: $mocha-sky;
   }
-  .cm {
-    color: $mocha-subtext1;
-    font-style: italic;
-  }
-  .cp {
-    color: $mocha-peach;
-  }
-  .c1, .cs {
-    color: $mocha-subtext1;
-    font-style: italic;
-  }
+
+  // Generic (diff / prompt) — kept semantic, not part of the nvim palette
   .gd {
-    color: $mocha-maroon;
+    color: $mocha-red;
   }
   .ge {
-    font-style: italic;
+    font-style: normal;
   }
   .gr {
     color: $mocha-red;
   }
   .gh {
     color: $mocha-blue;
-    font-weight: bold;
   }
   .gi {
     color: $mocha-green;
   }
   .go {
-    color: $mocha-subtext0;
+    color: $mocha-overlay2;
   }
   .gp {
     color: $mocha-blue;
-    font-weight: bold;
   }
   .gs {
-    font-weight: bold;
+    font-weight: normal;
   }
   .gu {
-    color: $mocha-lavender;
-    font-weight: bold;
+    color: $mocha-overlay2;
   }
   .gt {
-    color: $mocha-sky;
+    color: $mocha-blue;
   }
-  .kc, .kd, .kn {
-    color: $mocha-green;
-    font-weight: bold;
-  }
-  .kp {
-    color: $mocha-green;
-  }
-  .kr {
-    color: $mocha-green;
-    font-weight: bold;
-  }
-  .kt {
-    color: $mocha-peach;
-  }
-  .m {
-    color: $mocha-subtext0;
-  }
-  .s {
-    color: $mocha-pink;
-  }
-  .na {
+
+  // Type / StorageClass / Structure / Typedef
+  .kt, .nc, .ni {
     color: $mocha-yellow;
   }
-  .nb {
-    color: $mocha-green;
-  }
-  .nc {
-    color: $mocha-blue;
-    font-weight: bold;
-  }
-  .no {
-    color: $mocha-maroon;
-  }
-  .nd {
+
+  // Number / Constant / Boolean / Float
+  .m, .mf, .mh, .mi, .mo, .il, .no {
     color: $mocha-peach;
   }
-  .ni {
-    color: $mocha-subtext0;
-    font-weight: bold;
+
+  // String
+  .s, .sb, .sd, .s2, .sh, .si, .sx, .sr, .s1, .ss {
+    color: $mocha-green;
   }
-  .ne {
-    color: $mocha-red;
-    font-weight: bold;
+
+  // Character
+  .sc {
+    color: $mocha-teal;
   }
+
+  // Special / SpecialChar (escapes, interpolation)
+  .se {
+    color: $mocha-flamingo;
+  }
+
+  // Identifier / Special (builtins, attributes, variables, namespaces)
+  .na, .nb, .bp, .nn, .nv, .vc, .vg, .vi {
+    color: $mocha-flamingo;
+  }
+
+  // Function
   .nf {
     color: $mocha-blue;
   }
+
+  // Label
   .nl {
-    color: $mocha-yellow;
+    color: $mocha-sapphire;
   }
-  .nn {
-    color: $mocha-blue;
-    font-weight: bold;
-  }
-  .nt {
-    color: $mocha-green;
-    font-weight: bold;
-  }
-  .nv {
-    color: $mocha-lavender;
-  }
-  .ow {
-    color: $mocha-peach;
-    font-weight: bold;
-  }
+
   .w {
-    color: $mocha-subtext0;
-  }
-  .mf, .mh, .mi, .mo {
-    color: $mocha-subtext0;
-  }
-  .sb, .sc {
-    color: $mocha-pink;
-  }
-  .sd {
-    color: $mocha-pink;
-    font-style: italic;
-  }
-  .s2 {
-    color: $mocha-pink;
-  }
-  .se {
-    color: $mocha-peach;
-    font-weight: bold;
-  }
-  .sh {
-    color: $mocha-pink;
-  }
-  .si {
-    color: $mocha-lavender;
-    font-weight: bold;
-  }
-  .sx {
-    color: $mocha-green;
-  }
-  .sr {
-    color: $mocha-lavender;
-  }
-  .s1 {
-    color: $mocha-pink;
-  }
-  .ss {
-    color: $mocha-lavender;
-  }
-  .bp {
-    color: $mocha-green;
-  }
-  .vc, .vg, .vi {
-    color: $mocha-lavender;
-  }
-  .il {
-    color: $mocha-subtext0;
+    color: $mocha-overlay2;
   }
 }
