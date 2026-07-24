@@ -1,0 +1,37 @@
+code {
+  padding: .25em .25em;
+  background-color: var(--inline-code-background);
+}
+
+pre {
+  margin: 0 0 1rem;
+  white-space: pre-wrap;
+}
+
+pre code {
+  color: inherit;
+  font-size: 100%;
+  padding: 0;
+  background-color: transparent;
+}
+
+.highlight {
+  border-radius: 3px;
+  line-height: 1.4;
+  margin: 0.2rem 0.2rem 1rem;
+  padding: 0.2rem;
+
+  pre {
+    margin-bottom: 0;
+    overflow-x: auto;
+  }
+
+  .lineno {
+    display: inline-block; // Ensures the null space also isn't selectable
+    padding: 0 .75rem 0 .25rem;
+    // Make sure numbers aren't selectable
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+}

@@ -1,0 +1,30 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>{{ page.title }}</title>
+
+  {%- seo title=false -%}
+
+  {% if page.robots %}
+    <meta name="robots" content="{{page.robots}}" />
+  {% endif %}
+
+  <!-- insert favicons, used https://realfavicongenerator.net/ -->
+  <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+  {%- assign style_light_css = site.style_light | append: '.css' -%}
+  {%- assign style_dark_css = site.style_dark | append: '.css' -%}
+
+  {%- if site.style_light == site.style_dark -%}
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_light_css | relative_url }}">
+  {%- else -%}
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_light_css | relative_url }}" media="screen and (prefers-color-scheme: light)">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/" | append: style_dark_css | relative_url }}" media="screen and (prefers-color-scheme: dark)">
+  {%- endif -%}
+
+</head>

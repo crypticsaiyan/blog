@@ -1,0 +1,29 @@
+# Site settings
+title:          snippet-book
+description:    "notes about code, setups, workflow and why your favorite editor is the best one ever"
+baseurl:        "/snippet-book"
+url:            ""
+
+# https://jekyllrb.com/docs/configuration/options/
+timezone: Asia/Kolkata
+
+# Available style options based on catppuccin: latte, frappe, macchiato, mocha
+style_light: latte 
+style_dark: macchiato
+
+#include pages
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     /assets/css/_sass
+  style:        compressed
+
+plugins:
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge

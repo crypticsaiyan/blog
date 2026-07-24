@@ -1,0 +1,32 @@
+@use "colors/_mocha" as *;
+
+:root {
+  --base-color: #{$mocha-blue};
+  --border: dashed 1px #{rgba($mocha-sapphire, 1)};
+  --selection-background: #{rgba($mocha-sapphire, 0.5)};
+  --selection-text: #{$mocha-text};
+  --background-color: #{$mocha-base};
+  --text-color: #{$mocha-text};
+  --placeholder-color: #{$mocha-subtext1};
+  --link-color: #{$mocha-pink};
+  --inline-code-background: #{$mocha-surface1};
+
+  --code-color-1: #{$mocha-green};
+  --code-color-2: #{$mocha-text};
+  --code-color-3: #{$mocha-red};
+  --code-color-4: #{$mocha-maroon};
+  --code-color-5: #{$mocha-teal};
+  --code-color-6: #{$mocha-sky};
+  --code-color-7: #{$mocha-red};
+  --code-color-8: #{$mocha-teal};
+  --code-color-9: #{$mocha-blue};
+  --code-color-10: #{$mocha-blue};
+  --code-color-11: #{$mocha-text};
+  --code-color-12: #{$mocha-red};
+  --code-color-13: #{$mocha-teal};
+  --code-color-14: #{$mocha-blue};
+  --code-color-15: #{$mocha-red};
+  --code-color-16: #{$mocha-teal};
+  --code-color-17: #{$mocha-red};
+  --code-color-18: #{$mocha-blue};
+}
