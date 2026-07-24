@@ -1,8 +1,8 @@
 # Site settings
 title:          blog
 description:    "notes about code, setups, workflow and why your favorite editor is the best one ever"
-baseurl:        "/blog"
-url:            ""
+baseurl:        ""
+url:            "https://blog.crypticsaiyan.me"
 author:         rahul
 portfolio_url:    "https://crypticsaiyan.me"
 portfolio_label:  "crypticsaiyan"
