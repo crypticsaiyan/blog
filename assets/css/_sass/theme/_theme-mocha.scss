@@ -2,14 +2,19 @@
 
 :root {
   --base-color: #{$mocha-blue};
-  --border: dashed 1px #{rgba($mocha-sapphire, 1)};
+  --border: dashed 1px #{rgba($mocha-lavender, 1)};
   --selection-background: #{rgba($mocha-sapphire, 0.5)};
   --selection-text: #{$mocha-text};
   --background-color: #{$mocha-base};
   --text-color: #{$mocha-text};
   --placeholder-color: #{$mocha-subtext1};
-  --link-color: #{$mocha-pink};
-  --inline-code-background: #{$mocha-surface1};
+  --link-color: #{$mocha-mauve};
+  --inline-code-background: #{$mocha-mantle};
+  --lavender: #{$mocha-lavender};
+
+  --perm-r: #{$mocha-yellow};
+  --perm-w: #{$mocha-red};
+  --perm-x: #{$mocha-green};
 
   --code-color-1: #{$mocha-green};
   --code-color-2: #{$mocha-text};
