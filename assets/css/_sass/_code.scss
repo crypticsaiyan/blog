@@ -1,5 +1,6 @@
 code {
-  padding: .25em .25em;
+  padding: .15em .4em;
+  border-radius: 4px;
   background-color: var(--inline-code-background);
 }
 
@@ -15,11 +16,15 @@ pre code {
   background-color: transparent;
 }
 
+.highlighter-rouge {
+  position: relative;
+}
+
 .highlight {
   border-radius: 3px;
-  line-height: 1.4;
-  margin: 0.2rem 0.2rem 1rem;
-  padding: 0.2rem;
+  line-height: 1.5;
+  margin: 0.2rem 0.2rem 1.25rem;
+  padding: 1rem 1.25rem;
 
   pre {
     margin-bottom: 0;
@@ -34,4 +39,41 @@ pre code {
        -moz-user-select: none;
             user-select: none;
   }
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--placeholder-color);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--placeholder-color);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+  svg {
+    width: 14px;
+    height: 14px;
+    stroke: currentColor;
+    fill: none;
+  }
+}
+.highlighter-rouge:hover .copy-btn {
+  opacity: 1;
+}
+.copy-btn:hover {
+  color: var(--text-color);
+  border-color: var(--link-color);
+}
+.copy-btn.copied {
+  color: var(--perm-x);
+  border-color: var(--perm-x);
 }
