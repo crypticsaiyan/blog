@@ -279,29 +279,32 @@ header p {
     opacity: 0.18;
     z-index: 9999;
     pointer-events: none;
+    overflow: hidden;
 }
 .noisecont::before {
     content: "";
-    z-index: 9999;
     position: absolute;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../images/rainbow.webp");
-    animation: noise 0.1s linear infinite;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url("../images/rainbow-small.webp");
+    background-size: 256px 256px;
+    will-change: transform;
+    animation: noise 0.1s steps(1) infinite;
 }
 @keyframes noise {
-    0% { background-position: 0 0; }
-    10% { background-position: -5% -10%; }
-    20% { background-position: -15% -5%; }
-    30% { background-position: 5% -25%; }
-    40% { background-position: 20% 25%; }
-    50% { background-position: -25% 10%; }
-    60% { background-position: 15% 5%; }
-    70% { background-position: 0 15%; }
-    80% { background-position: 25% 35%; }
-    90% { background-position: -10% 10%; }
-    100% { background-position: 0 0; }
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-2%, -4%); }
+    20% { transform: translate(-6%, -2%); }
+    30% { transform: translate(2%, -10%); }
+    40% { transform: translate(8%, 10%); }
+    50% { transform: translate(-10%, 4%); }
+    60% { transform: translate(6%, 2%); }
+    70% { transform: translate(0, 6%); }
+    80% { transform: translate(10%, 14%); }
+    90% { transform: translate(-4%, 4%); }
+    100% { transform: translate(0, 0); }
 }
 
 /**
