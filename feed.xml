@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://blog.crypticsaiyan.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.crypticsaiyan.me/" rel="alternate" type="text/html" /><updated>2026-10-12T20:17:45+05:30</updated><id>https://blog.crypticsaiyan.me/feed.xml</id><title type="html">blog</title><subtitle>notes about code, setups, workflow and why your favorite editor is the best one ever</subtitle><author><name>rahul</name></author><entry><title type="html">Hello World</title><link href="https://blog.crypticsaiyan.me/2026/08/13/Hello-World.html" rel="alternate" type="text/html" title="Hello World" /><published>2026-08-13T00:00:00+05:30</published><updated>2026-08-13T00:00:00+05:30</updated><id>https://blog.crypticsaiyan.me/2026/08/13/Hello-World</id><content type="html" xml:base="https://blog.crypticsaiyan.me/2026/08/13/Hello-World.html"><![CDATA[<p><img src="/assets/post/hw.webp" alt="A meme" /></p>
+
+<h1 id="who-am-i">Who am I?</h1>
+
+<p>Well… that’s a deep philosophical question.</p>
+
+<h2 id="some-background">Some Background</h2>
+
+<p>I’m pretty sure that my programming journey didn’t start with printing “Hello World” in the terminal. I had an interest in programming since my childhood and I can remember building frontend websites and watching Python tutorials in 8th grade. But I left programming (and pretty much everything) and began preparing for competitive exams. And after studying some Physics, Maths and Chemistry, I took admission in CSE branch at IIT Dhanbad :P.</p>
+
+<p>You can think of me as a curious guy who likes to dive into interesting things.</p>
+
+<h2 id="daily-driver">Daily Driver</h2>
+
+<p><img src="/assets/post/kernel_panic.jpeg" alt="Kernel Panic!" />
+<em>I use Arch btw</em></p>
+
+<p>My <a href="https://github.com/armoredvortex">roommate</a> introduced me to Linux two years ago and I’ve been using it since then. At first I installed Ubuntu but it didn’t suit me so I switched to Manjaro KDE Plasma. It wasn’t the best for my laptop (speakers, camera, bluetooth often broke after updates) but I liked using it. Particularly, I got used to using the AUR. Then I tried installing vanilla Arch several times on my laptop both in the manual way and using the <code class="language-plaintext highlighter-rouge">archinstall</code> script, but wasn’t able to make it work (skill issue ig ;( ). So I gave Garuda Linux a try and I haven’t looked back since. I had also developed a habit of “ricing” (making things look cooler) my OS which cost me a lot of time doing <del>meaningless</del> changes in the <code class="language-plaintext highlighter-rouge">~/.config</code> folder. You can check out my dotfiles on <a href="https://github.com/crypticsaiyan/dotfiles">github</a>.</p>
+
+<p>As a result, you’ll find me using the terminal more than anything else.</p>
+
+<h2 id="experience">Experience</h2>
+
+<p>I have built many projects which include TUIs, CLIs, real-time systems, multilingual apps, cool frontends etc. You can check out all my work <a href="https://github.com/crypticsaiyan">here</a>. Many of these projects were built during hackathons and some eventually led me to win!</p>
+
+<h1 id="future">Future?</h1>
+
+<p>I’m looking forward to using this space to document stuff and share my mistakes and learnings :). Stay tuned for cool projects!</p>
+
+<p>Thanks for reading!!</p>]]></content><author><name>rahul</name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
