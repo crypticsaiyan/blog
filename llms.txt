@@ -1,0 +1,16 @@
+# Rahul Joshi's blog
+
+> Tech tutorials, learnings and deep dives into rabbit holes.
+
+Blog by Rahul Joshi (crypticsaiyan), a CS undergrad at IIT Dhanbad, about code, setups and building software.
+Author: Rahul Joshi (https://crypticsaiyan.me)
+
+## Posts
+
+- [Hello World](https://blog.crypticsaiyan.me/2026/08/13/Hello-World.html): Well... that's a deep philosophical question.
+
+## Optional
+
+- [All posts as markdown](https://blog.crypticsaiyan.me/llms-full.txt)
+- [RSS feed](https://blog.crypticsaiyan.me/feed.xml)
+- [Author's portfolio](https://crypticsaiyan.me/llms.txt)
