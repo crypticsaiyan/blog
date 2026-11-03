@@ -1,6 +1,6 @@
 # Site settings
 title:          "Rahul Joshi's blog"
-description:    "notes about code, setups, workflow and why your favorite editor is the best one ever"
+description:    "Tech tutorials, learnings and deep dives into rabbit holes."
 baseurl:        ""
 url:            "https://blog.crypticsaiyan.me"
 lang:           en
@@ -50,7 +50,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/og-default.jpg
+      image: /assets/images/og-default.png
 
 # Build settings
 markdown: kramdown
