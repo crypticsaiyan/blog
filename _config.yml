@@ -50,7 +50,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/og-default.png
+      image: /assets/images/og-default.jpg
 
 # Build settings
 markdown: kramdown
