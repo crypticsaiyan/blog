@@ -1,9 +1,15 @@
 # Site settings
-title:          blog
+title:          "Rahul Joshi's blog"
 description:    "notes about code, setups, workflow and why your favorite editor is the best one ever"
 baseurl:        ""
 url:            "https://blog.crypticsaiyan.me"
-author:         rahul
+lang:           en
+author:
+  name:         Rahul Joshi
+  url:          "https://crypticsaiyan.me"
+  twitter:      _crypticsaiyan
+# one-line "who" used by llms.txt (_plugins/aeo.rb)
+about:          "Blog by Rahul Joshi (crypticsaiyan), a CS undergrad at IIT Dhanbad, about code, setups and building software."
 portfolio_url:    "https://crypticsaiyan.me"
 portfolio_label:  "crypticsaiyan"
 github_url:       "https://github.com/crypticsaiyan/blog"
@@ -25,6 +31,26 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
+
+# jekyll-seo-tag: share cards + JSON-LD (sameAs ties the blog to the portfolio)
+twitter:
+  username:     _crypticsaiyan
+  card:         summary_large_image
+social:
+  links:
+    - "https://crypticsaiyan.me"
+    - "https://github.com/crypticsaiyan"
+    - "https://x.com/_crypticsaiyan"
+    - "https://www.linkedin.com/in/rahul-joshi-059a882a7/"
+
+# share image for pages without their own (posts get their first image,
+# see _plugins/aeo.rb)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-default.png
 
 # Build settings
 markdown: kramdown

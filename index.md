@@ -4,7 +4,7 @@ layout: home
 permalink: /
 ---
 
-![Train to make my website look aesthetic](/assets/post/train.gif)
+![Train to make my website look aesthetic](/assets/post/train.webp)
 
 Hi! I'm Rahul, a third year CS undergrad at [IIT Dhanbad](https://iitism.ac.in). I like making cool websites and am currently exploring different fields of computer science.
 

@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<h1 class="visually-hidden">{{ site.title }}</h1>
+
 {{ content }} {%- if site.posts.size > 0 -%}
 <ul>
     {%- for post in site.posts -%}
